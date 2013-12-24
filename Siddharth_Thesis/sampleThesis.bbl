@@ -1,0 +1,380 @@
+\begin{thebibliography}{10}\setlength{\itemsep}{-1ex}\small
+
+\bibitem{A15}
+Robust word recognition dataset.
+\newblock {\em http://algoval.essex.ac.uk/icdar/RobustWord.html}.
+
+\bibitem{chap4-3}
+J.~Artur and A.~Mário.
+\newblock On the use of independent component analysis for image compression.
+\newblock {\em Signal Processing: Image Communication}, pages 378--389.
+
+\bibitem{C5}
+M.~Ashikhmin and P.~Shirley.
+\newblock Steerable illumination textures.
+\newblock {\em ACM Transactions on Graphics}, 21:1--19, 2002.
+
+\bibitem{chap4-1}
+M.~Bartlett, J.~Movellan, and T.~Sejnowski.
+\newblock Face recognition by independent component analysis.
+\newblock {\em IEEE Transactions on Neural Networks}, pages 1450--1464.
+
+\bibitem{C8}
+A.~Baumberg.
+\newblock Blending images for texturing 3d models.
+\newblock {\em In proc. Conf. on British Machine Vision Association}, pages
+  404--413, 2002.
+
+\bibitem{A8}
+J.~Bernsen.
+\newblock Dynamic thresholding of gray level images.
+\newblock {\em International Conference on Pattern Recognition (ICPR)}, pages
+  1251--1255, 1986.
+
+\bibitem{chap4-5}
+J.~Canny.
+\newblock A computational approach to edge detection.
+\newblock {\em IEEE Trans. Pattern Analysis and Machine Intelligence}, pages
+  679--714, 1986.
+
+\bibitem{chap2-1}
+X.~Chen and A.~L. Yuille.
+\newblock Detecting and reading text in natural scenes.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 366--373, 2004.
+
+\bibitem{chap2-5}
+A.~Coates, B.~Carpenter, C.~Case, S.~Satheesh, B.~Suresh, T.~Wang, D.~Wu, and
+  A.~Ng.
+\newblock Text detection and character recognition in scene images with
+  unsupervised feature learning.
+\newblock {\em International Conference on Document Analysis and Recognition
+  (ICDAR)}, pages 440--445, 2011.
+
+\bibitem{C2}
+K.~Dana, B.~V. Ginneken, S.~Nayar, and J.~Koenderink.
+\newblock Reflectance and texture of real-world surfaces.
+\newblock {\em ACM Transactions on Graphics}, 18(1):1--34, 1999.
+
+\bibitem{chap2-9}
+M.~Drew, N.~Hajari, Y.~Hel-Or, and T.~Malzbender.
+\newblock Specularity and shadow interpolation via robust polynomial texture
+  maps.
+\newblock {\em In Proceedings of the British Machine Vision Conference}, 2009.
+
+\bibitem{C14}
+G.~Earl, K.~Martinez, and T.~Malzbender.
+\newblock Archaeological applications of polynomial texture mapping: Analysis,
+  conservation and representation.
+\newblock {\em Journal of Archaeological Science}, pages 2040--2050, 2010.
+
+\bibitem{chap2-11}
+B.~Epshtein, E.~Ofek, and Y.~Wexler.
+\newblock Detecting text in natural scenes with stroke width transform.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 2963--2970, 2010.
+
+\bibitem{chap2-27}
+J.~Feild and E.~L. Miller.
+\newblock Improving open-vocabulary scene text recognition.
+\newblock {\em In Proceedings of the International Conference on Document
+  Analysis and Recognition}, 2013.
+
+\bibitem{chap4-9}
+G.~D. Finlayson, M.~S. Drew, and C.~Lu.
+\newblock Entropy minimization for shadow removal.
+\newblock {\em IJCV}, pages 35--57, 2009.
+
+\bibitem{chap4-8}
+G.~D. Finlayson, S.~D. Hordley, C.~Lu, and M.~S. Drew.
+\newblock On the removal of shadows from images.
+\newblock {\em PAMI}, pages 59--68, 2006.
+
+\bibitem{A1}
+R.~M. Haralick and L.~G. Shapiro.
+\newblock Image segmentation techniques.
+\newblock {\em Computer Vision, Graphics and Image Processing}, 29:100--132,
+  1985.
+
+\bibitem{chap2-21}
+X.~He, K.~Torrance, F.~Sillion, and D.~Greenberg.
+\newblock Comprehensive physical model for light reflection.
+\newblock {\em Computer Graphics (SIGGRAPH 91 Proceedings)}, pages 175--186,
+  1991.
+
+\bibitem{chap4-2}
+J.~Hurri, A.~Hyvarinen, J.~Karhunen, and E.~Oja.
+\newblock Image feature extraction using independent component analysis.
+\newblock {\em IEEE Nordic Signal Processing Symposium}, 1996.
+
+\bibitem{A11}
+A.~Hyvarinen, J.~Karhunen, and E.~Oja.
+\newblock Independent component analysis.
+\newblock {\em John Wiley and Sons, New York,}, 2001.
+
+\bibitem{A12}
+A.~Hyvarinen and E.~Oja.
+\newblock Independent component analysis: Algorithms and applications.
+\newblock {\em Neural Networks}, 13:411--430, 2001.
+
+\bibitem{chap3-5}
+C.~Jiang and M.~Ward.
+\newblock Shadow identification.
+\newblock {\em IEEE Conf. on Computer Vision and Pattern Recognition}, pages
+  606--612, 1992.
+
+\bibitem{chap3-4}
+C.~Jiang and M.~Ward.
+\newblock Shadow segmentation and classification in a constrained environment.
+\newblock {\em In CVGIP: Image Understanding}, pages 213--225, 1994.
+
+\bibitem{chap2-14}
+K.~Kim, H.~Byun, Y.~Song, Y.~Choi, S.~Chi, K.~Kim, and Y.~Chung.
+\newblock Scene text extraction in natural scene images using hierarchical
+  feature combining and verification.
+\newblock {\em International Conference on Pattern Recognition (ICPR)}, pages
+  679--682, 2004.
+
+\bibitem{A5}
+J.~Kittler, J.~Illingworth, and J.~Foglein.
+\newblock Threshold selection based on a simple image statistic.
+\newblock {\em Computer Vision, Graphics, and Image Processing}, 30:125--147,
+  1985.
+
+\bibitem{chap2-19}
+E.~Lafortune, S.~Foo, K.~Torrance, and D.~Greenberg.
+\newblock Non-linear approximation of reflectance functions.
+\newblock {\em Computer Graphics (SIGGRAPH 97 Proceedings)}, pages 117--126,
+  1997.
+
+\bibitem{chap4-10}
+J.-F. Lalonde, A.~A. Efros, and S.~G. Narasimhan.
+\newblock Detecting ground shadows in outdoor consumer photographs.
+\newblock {\em European Conference on Computer Vision (ECCV)}, 2010.
+
+\bibitem{chap2-3}
+J.~Lee, P.~Lee, S.~Lee, A.~Yuille, and C.~Koch.
+\newblock Adaboost for text detection in natural scene.
+\newblock {\em International Conference on Document Analysis and Recognition
+  (ICDAR)}, pages 429--434, 2011.
+
+\bibitem{chap3-6}
+A.~Leone, C.~Distante, and F.~Buccolieri.
+\newblock A texture based approach for shadow detection.
+\newblock {\em IEEE Conference on Advanced Video and Signal Based
+  Surveillance}, pages 371--376, 2005.
+
+\bibitem{C1}
+T.~Leung and J.~Malik.
+\newblock Representing and recognizing the visual appearance of materials using
+  three-dimensional textons.
+\newblock {\em International Journal On Computer Vision}, 43(1):29--44, 2001.
+
+\bibitem{chap2-13}
+C.~Li, X.~Ding, and Y.~Wu.
+\newblock Automatic text location in natural scene images.
+\newblock {\em International Conference on Document Analysis and Recognition},
+  pages 1069--1073, 2001.
+
+\bibitem{chap2-4}
+R.~Lienhart and A.~Wernicke.
+\newblock Localizing and segmenting text in images and videos.
+\newblock {\em Circuits and Systems for Video Technology}, pages 256--268,
+  2002.
+
+\bibitem{C4}
+T.~Malzbender, D.~Gelb, and H.~Wolters.
+\newblock Polynomial texture maps.
+\newblock {\em In Computer Graphics, SIGGRAPH Proceedings}, pages 519--528,
+  2001.
+
+\bibitem{chap4-4}
+S.~Milyaev, O.~Barinova, T.~Novikova, P.~Kohli, and V.~Lempitsky.
+\newblock Image binarization for end-to-end text understanding in natural
+  images.
+\newblock {\em IEEE Proceedings of International Conference on Document
+  Analysis and Recognition}, pages 128--132, 2013.
+
+\bibitem{A16}
+A.~Mishra, K.~Alahari, and C.~Jawahar.
+\newblock An mrf model for binarization of natural scene text.
+\newblock {\em Proceedings of International Conference on Document Analysis and
+  Recognition}, 2011.
+
+\bibitem{chap2-12}
+A.~Mishra, K.~Alahari, and C.~V. Jawahar.
+\newblock Top-down and bottom-up cues for scene text recognition.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 2687--2694, 2012.
+
+\bibitem{chap4-11}
+S.~G. Narasimhan, V.~Ramesh, and S.~K. Nayar.
+\newblock A class of photometric invariants: Separating material from shape and
+  illumination.
+\newblock {\em IEEE International Conference on Computer Vision (ICCV)}, 2003.
+
+\bibitem{chap3-1}
+S.~Nayar, G.~Krishnan, M.~D. Grossberg, and R.~Raskar.
+\newblock Fast separation of direct and global components of a scene using high
+  frequency illumination.
+\newblock {\em ACM Trans. on Graphics (also Proc. of ACM SIGGRAPH)}, July 2006.
+
+\bibitem{chap2-10}
+L.~Neumann and J.~Matas.
+\newblock A method for text localization and recognition in real-world images.
+\newblock {\em ACCV}, pages 2067--2078, 2010.
+
+\bibitem{chap2-15}
+L.~Neumann and J.~Matas.
+\newblock Real-time scene text localization and recognition.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 3538--3545, 2012.
+
+\bibitem{chap2-16}
+L.~Neumann and J.~Matas.
+\newblock Scene text localization and recognition with oriented stroke
+  detection.
+\newblock {\em IEEE International Conference on Computer Vision (ICCV)}, pages
+  97--104, 2013.
+
+\bibitem{A9}
+W.~Niblack.
+\newblock An introduction to digital image processing.
+\newblock {\em New York: Prentice Hall}, 1986.
+
+\bibitem{chap2-22}
+F.~Nicodemus, J.~Richmond, and J.~Hsai.
+\newblock Geometrical considerations and nomenclature for reflectance.
+\newblock {\em U.S. Dept. of Commerce, National Bureau of Standards}, 1977.
+
+\bibitem{chap2-6}
+J.~Ohya, A.~Shio, and S.~Akamatsu.
+\newblock Recognizing characters in scene images.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  pages 214--220, 1994.
+
+\bibitem{A2}
+N.~Otsu.
+\newblock A threshold selection method from gray-level histograms.
+\newblock {\em IEEE Systems, Man, and Cybernetics Society}, 9:62--66, 1979.
+
+\bibitem{C13}
+J.~Padfield, D.~Saunders, and T.~Malzbender.
+\newblock Polynomial texture mapping: A new tool for examining the surface of
+  paintings.
+\newblock {\em ICOM Committee for Conservation}, 1:504--510, 2005.
+
+\bibitem{A4}
+N.~R. Pal and S.~K. Pal.
+\newblock A review on image segmentation techniques.
+\newblock {\em Pattern Recognition}, 26:1227--1249, 1993.
+
+\bibitem{chap4-7}
+W.~Pan, T.~Bui, and C.~Suen.
+\newblock Text detection from scene images using sparse representation.
+\newblock {\em International Conference on Pattern Recognition (ICPR)}, 2008.
+
+\bibitem{chap2-2}
+Y.~Pan, X.~Hou, and C.~Liu.
+\newblock A robust system to detect and localize texts in natural scene images.
+\newblock {\em Document Analysis Systems, DAS}, pages 35--42, 2008.
+
+\bibitem{chap2-7}
+Y.~Pan, X.~Hou, and C.~Liu.
+\newblock Text localization in natural scene images based on conditional random
+  field.
+\newblock {\em International Conference on Document Analysis and Recognition
+  (ICDAR)}, pages 6--10, 2009.
+
+\bibitem{chap2-20}
+T.~Phong.
+\newblock Illumination for computer generated images.
+\newblock {\em Communications of the ACM}, pages 311--317, 1975.
+
+\bibitem{C6}
+C.~Rocchini, P.~Cignoni, C.~Montani, and R.~Scopigno.
+\newblock Multiple textures stitching and blending on 3d objects.
+\newblock {\em In Eurographics Rendering Workshop}, pages 119--130, 1999.
+
+\bibitem{A7}
+P.~Sahoo and G.~Arora.
+\newblock A thresholding method based on two-dimensional renyi’s entropy.
+\newblock {\em Pattern Recognition}, 37:1149--1161, 2004.
+
+\bibitem{A3}
+P.~K. Sahoo, S.~Soltani, A.~K.~C. Wong, and Y.~C. Chen.
+\newblock A survey of thresholding techniques.
+\newblock {\em Computer Vision, Graphics and Image Processing}, 41:233--260,
+  1988.
+
+\bibitem{chap3-3}
+E.~Salvador, A.~Cavallaro, and T.~Ebrahimi.
+\newblock Shadow identification and classification using invariant colour
+  models.
+\newblock {\em In IEEE International Conference on Acoustic, Speech and Signal
+  Processing}, pages 1545--1548, 2001.
+
+\bibitem{A6}
+J.~J. Sauvola and M.~Pietikainen.
+\newblock Adaptive document image binarization.
+\newblock {\em Pattern Recognition}, 33:225--236, 2000.
+
+\bibitem{chap2-18}
+F.~Sillion, J.~Arvo, S.~Westin, and D.~Greenberg.
+\newblock A global illumination solution for general reflectance distributions.
+\newblock {\em Computer Graphics (SIGGRAPH 91 Proceedings)}, pages 187--196,
+  1991.
+
+\bibitem{C7}
+M.~Soucy, G.~Godin, R.~Baribeau, F.~Blais, and M.~Rioux.
+\newblock Sensons and algorithms for the construction of digital 3d colour
+  models of real objects.
+\newblock {\em Image Processing Proceedings}, pages 409--412, 1996.
+
+\bibitem{chap4-6}
+A.~Srivastav and J.~Kumar.
+\newblock Text detection in scene images using stroke width and
+  nearest-neighbor constraints.
+\newblock {\em IEEE Region 10 Conference on TENCON}, pages 1--5, 2008.
+
+\bibitem{chap2-23}
+P.~Stathis, E.~Kavallieratou, and N.~Papamarkos.
+\newblock An evaluation technique for binarization algorithms.
+\newblock {\em J. UCS}, pages 3011--3030, 2008.
+
+\bibitem{A10}
+R.~Szupiluk and A.~Cichocki.
+\newblock Blind signal separation using second order statistics.
+\newblock {\em Proc. of SPETO}, pages 485--488, 2001.
+
+\bibitem{chap2-25}
+C.~Thillou and B.~Gosselin.
+\newblock Color binarization for complex camera-based images.
+\newblock {\em Electronic Imaging Conference of the International Society for
+  Optical Imaging}, 2005.
+
+\bibitem{chap2-24}
+T.~Wakahara and K.~Kita.
+\newblock Binarization of color characters in scene images using k-means
+  clustering and support vector machines.
+\newblock {\em International Conference on Pattern Recognition (ICPR)}, pages
+  3183--3186, 2010.
+
+\bibitem{chap3-2}
+A.~Woo, P.~Poulin, and A.~Fournier.
+\newblock A survey of shadow algorithms.
+\newblock {\em IEEE Computer Graphics and Applications}, November 1990.
+
+\bibitem{chap2-8}
+C.~Yao, X.~Bai, W.~Liu, Y.~Ma, and Z.~Tu.
+\newblock Detecting texts of arbitrary orientations in natural images.
+\newblock {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 1083--1090, 2012.
+
+\bibitem{chap2-26}
+Y.~Zhou, J.~Feild, E.~Miller, and R.~Wang.
+\newblock Scene text segmentation via inverse rendering.
+\newblock {\em In Proceedings of the International Conference on Document
+  Analysis and Recognition}, 2013.
+
+\end{thebibliography}

@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: sampleThesis.aux
+The style file: latex8.bst
+Database file #1: sampleBib.bib
+I was expecting a `,' or a `}'---line 485 of file sampleBib.bib
+ :   
+ :   year =   "2002"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 513 of file sampleBib.bib
+ :   
+ :   year =   "2006"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "B6"
+Warning--I didn't find a database entry for "B4"
+Name 2 in "Y.F. Pan and X. Hou, and C.L. Liu" has a comma at the end for entry chap2-2
+while executing---line 2137 of file latex8.bst
+Warning--to sort, need author or key in A15
+Warning--empty author in A15
+Warning--empty year in A15
+Warning--empty year in chap4-3
+Warning--empty year in chap4-1
+Name 2 in "Y.F. Pan and X. Hou, and C.L. Liu" has a comma at the end for entry chap2-2
+while executing---line 2221 of file latex8.bst
+You've used 66 entries,
+            2118 wiz_defined-function locations,
+            860 strings with 12930 characters,
+and the built_in function-call counts, 25620 in all, are:
+= -- 2594
+> -- 1145
+< -- 39
++ -- 462
+- -- 382
+* -- 1615
+:= -- 4031
+add.period$ -- 197
+call.type$ -- 66
+change.case$ -- 389
+chr.to.int$ -- 0
+cite$ -- 71
+duplicate$ -- 1070
+empty$ -- 1827
+format.name$ -- 382
+if$ -- 5620
+int.to.chr$ -- 0
+int.to.str$ -- 66
+missing$ -- 66
+newline$ -- 332
+num.names$ -- 130
+pop$ -- 372
+preamble$ -- 1
+purify$ -- 323
+quote$ -- 0
+skip$ -- 958
+stack$ -- 0
+substring$ -- 1744
+swap$ -- 425
+text.length$ -- 39
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 264
+warning$ -- 5
+while$ -- 229
+width$ -- 68
+write$ -- 708
+(There were 4 error messages)
