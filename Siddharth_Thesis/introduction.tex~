@@ -1,3 +1,96 @@
+
+A digital image is a discrete sampled representation of a two-dimensional function ($I_{ij} \in \mathcal{R}^d$)
+Each element, $I_{ij}$ is referred to as a pixel, which takes a d-dimensional value depending on the function
+that it tries to model. In the case of a natural color image, each pixel captures the intensity and color
+of the light ray that travels from a specific world point to the camera center. A popular way to represent
+these properties of the light ray is to measure the intensity of the red, green and blue components of
+the light ray. One could then think of the complete image as composed of three component images: a red image,
+a green image and a blue image. Another way of representation may instead capture the Hue and Saturation of
+the color in two components and the intensity in a third component. Given a specific representation, one can
+often convert the image into other representations (See Figure~\ref{fig:imageComponents}).
+
+
+\begin{figure*}[t]
+\centering
+\subfigure[Input Color Image]{
+\includegraphics[height=.9in, width=2in]{chap1/orig.eps}
+\label{fig:subfig11}
+}\\
+\subfigure[Red]{
+\includegraphics[height=.9in, width=1.95in]{chap1/r.eps}
+\label{fig:subfig12}
+}
+\subfigure[Green]{
+\includegraphics[height=.9in, width=1.95in]{chap1/g.eps}
+\label{fig:subfig11}
+}
+\subfigure[Blue]{
+\includegraphics[height=.9in, width=1.95in]{chap1/b.eps}
+\label{fig:subfig13}
+}
+\\
+%\hspace*{1.5in}
+\subfigure[Hue]{
+\includegraphics[height=.9in, width=1.95in]{chap1/h.eps}
+\label{fig:subfig13}
+}
+\subfigure[Saturation]{
+\includegraphics[height=.9in, width=1.95in]{chap1/s.eps}
+\label{fig:subfig12}
+}
+\subfigure[Intensity]{
+\includegraphics[height=.9in, width=1.95in]{chap1/v.eps}
+\label{fig:subfig13}
+}
+%\\
+% \hspace*{1.5in}
+% \subfigure[Blue]{
+% \includegraphics[height=.6in, width=1.4in]{results/IC/B.eps}
+% \label{fig:subfig14} } 
+% \subfigure[$IC_3$]{
+% \includegraphics[height=.6in, width=1.4in]{results/IC/14.eps}
+% \label{fig:subfig13}
+% }
+% \subfigure[Binarized $IC_3$]{
+% \includegraphics[height=.6in, width=1.4in]{results/IC/binary.eps}
+% \label{fig:subfig14} } 
+\caption
+{A natural color image, that is represented by various decompositions into component images.
+(b)-(d) RGB components of the image (e)-(g) HSV components of the image}
+\label{fig:imageComponents}
+\end{figure*}
+% \begin{figure}[t]
+% \centering
+% \subfigure{
+% \includegraphics[height=1.5in,width=1.8in]{texture/1.eps}
+% }
+% \subfigure{
+% \includegraphics[height=1.5in,width=1.8in]{texture/2.eps}
+% }
+% \subfigure{
+% \includegraphics[height=1.5in,width=1.8in]{texture/3.eps}
+% }
+% \subfigure{
+% \includegraphics[height=1.5in,width=1.8in]{texture/7.eps}
+% }
+% \subfigure{
+% \includegraphics[height=1.5in,width=1.8in]{texture/8.eps}
+% }
+% \subfigure{
+% \includegraphics[height=1.5in,width=1.8in]{texture/9.eps}
+% }
+% \caption{A natural color image, that is represented by various decompositions into component images.}
+% \label{fig:imageComponents}
+% \end{figure}
+
+A specific representation may be more appropriate in solving a specific problem, while not so well suited for
+others. For example, the $L^*a^*b^*$ representation is designed to accurately measure the perceptual differences between
+a given pair of colors, while the $CMY$ component representation is better suited for printing of images. In this
+thesis, we look at decomposing an image into components based on the surface properties that is represented as well
+as the illumination of the surface. We show that appropriate decomposition can help in modeling the observed surface
+for enhanced photo-realistic rendering as well as the segmentation of scene text from shadows, reflections and 
+complex backgrounds.
+
 \label{sec:intro}
 \section{Analysis of Texture in Scene Images}
 
@@ -11,7 +104,7 @@ scene. Some of the natural scene textures are shown in Fig \ref{fig:natural}
 
 3D Texture modeling is an important area in computer graphics as it results in realistic rendering
 of natural material surfaces. The characterization of surface reflectance properties is important in
-achieving photorealism. The appearance of a surface in different lighting and viewing direction/conditions 
+achieving photorealism. The appearance of a surface in different lighting and viewing direction/conditions
 is affected by its reflectance properties. 3D texture actually models the relation
 between surface reflectance properties and illumination direction.
 
@@ -53,7 +146,7 @@ between surface reflectance properties and illumination direction.
 \subfigure[]{
 \includegraphics[scale=.18]{image_eps/orig_some/26.eps}
 }
-\label{fig:3dtexture} 
+\label{fig:3dtexture}
 \caption{Variation in appearance of the same surface
 patch, when illuminated from different lighting directions}
 \subfigure{
@@ -63,7 +156,7 @@ patch, when illuminated from different lighting directions}
 \caption{Experimental setup}
 \end{figure}
 
-Mapping 2D textures or images is the most common method used, which is
+Mapping 2D textures or images on to a 3D surface is the most common method used, which is
 efficient for most 3D models and scenes, especially where the lighting
 conditions remain constant. They look best when the object is viewed in similar lighting conditions as
 when the texture is captured. They appear flat and smooth.
@@ -71,7 +164,7 @@ In practice, the real world surfaces are
 characterized by phenomena such as inter-reflection, self-shadowing, subsurface
 scattering, specularity, etc. These properties interact with different lighting
 directions and therefore the same surface appears different under
-different lighting condition Fig 1.2. 2D texture fails to capture these complex reflectance properties of a 
+different lighting condition Fig 1.3. 2D texture fails to capture these complex reflectance properties of a
 surface and therefore a rendered surface looks highly unrealistic in case the lighting
 conditions are changed. In order to produce a realistic rendering it is necessary to capture
 and model the interaction of the material surface with different lighting
@@ -90,11 +183,11 @@ multiple images are captured under different lighting conditions.
 
 Image based modeling techniques \cite{C8,C6,C7} have emerged as
 an effective approach for realistic rendering of 3D objects,
-where multi-view geometry is utilized in directly synthesizing 
+where multi-view geometry is utilized in directly synthesizing
 an unseen view of an object from nearby views without
 explicit surface reconstruction. The traditional object models capture the shape information in the meshes,
-while the reflectance and the surface properties are relegated in the textures. 3D models such as 
-Polynomial Texture Maps (PTM) capture the 
+while the reflectance and the surface properties are relegated in the textures. 3D models such as
+Polynomial Texture Maps (PTM) capture the
 surface properties more faithfully, including the effect of small scale height variation on the surface.
 
 Polynomial Texture Maps \cite{C4} belong to the class of UTFs (Uni-directional Texture Function). It is a pixel
@@ -105,16 +198,16 @@ lighting conditions and models real world phenomenon such as
 self-shadowing, inter-reflection and sub-surface scattering. They thus introduce
 enhanced photorealism in texture mapping.
 Polynomial Texture Mapping is applied in a wide
-range of archaeological contexts \cite{C14}. 
+range of archaeological contexts \cite{C14}.
 It also offers advantages over traditional raking
 light photography for examining and
 documenting the surface texture and
 shape of paintings \cite{C13}.
-Recently, PTMs have been used in cultural heritage field to document and virtually inspect 
+Recently, PTMs have been used in cultural heritage field to document and virtually inspect
 several sets of small objects, such as cuneiform tablets and coins.
 
 \subsection{Problem}
-Texture mapping is an important area in computer graphics which adds realism to three dimensional 
+Texture mapping is an important area in computer graphics which adds realism to three dimensional
 models. 2D texture mapping fails to capture the surface variation and reflectance properties under
 varying lighting and viewing direction. They appear good only when viewed from similar lighting
 direction in which they were captured and fails to provide the information required for rendering other than the original
@@ -125,7 +218,7 @@ results in enhanced realism of the scene.
 But PTM technique causes overall smoothening of light which dampens the effect
 of specularity and softens sharp shadows. The effect of point light source is
 reduced and the appearance is always similar to a diffused light source.
-Therefore we improve upon the PTM model 
+Therefore we improve upon the PTM model
 to overcome the above limitations
 and generate a complete 3D Texture model that can be evaluated at individual
 pixels. We propose an approach to image-based lighting interpolation that is
@@ -136,7 +229,7 @@ based on estimates of geometry and shading from a set of input images.
 %\subfigure[]{
 \includegraphics[height=3.7in,width=6.2in]{sep_images/sep3.eps}
 %\label{fig:subfig23} } \caption[] {Components of a sponge image: a) Original image, b) Direct c) Global
-%component.} 
+%component.}
 
 \caption{Component Based Modeling (CBM)}
 \label{fig:CBM}
@@ -148,7 +241,7 @@ lighting conditions.
 The scene is
 illuminated using a high frequency checkerboard pattern using the projector. The
 projector is moved to different lighting positions for the purpose of obtaining
-images with different lighting directions. Experimental setup is shown in Figure 1.3.
+images with different lighting directions. Experimental setup is shown in Figure 1.4.
 
 When we separate the image of the texture into direct and the global part, we find
 that the shadows and the specularity appear very strongly in the direct part,
@@ -170,7 +263,7 @@ two models separately to generate the corresponding components, and combine them
 to get the final image. Then for a new lighting direction, we can readily
 interpolate both specular content as well as shadows.
 The main contributions of this work are (1) Direct and Global modeling characterized by
-shadows, specularity and luminance, 
+shadows, specularity and luminance,
 (2) separate modeling and hence better capturing of shadows and specularity
 and (3) per pixel function model to
 achieve real-time rendering of enhanced 3D textures on GPU.
@@ -206,7 +299,7 @@ applications such as content based web image search,
 information retrieval and mobile based text analysis
 and recognition.
 
-In the recent years, content-based image analysis techniques have received more attention with the 
+In the recent years, content-based image analysis techniques have received more attention with the
 advent of various digital image capture devices.
 Applications of text localization
 and recognition in real-world images ranges widely. It is used for indexing large image
@@ -214,41 +307,41 @@ databases by their textual content, sign recognition
 for foreigners, automatic license plate recognition, assisting the elderly and visually
 impaired in reading labels.
 
-The images captured by these devices can vary dramatically depending on lighting conditions, reflections, 
+The images captured by these devices can vary dramatically depending on lighting conditions, reflections,
 shadows and specularity. Some natural scene text images are shown in Fig \ref{fig:scenetext}.
 These images contain numerous degradations such as uneven lighting, complex background, multiple colors, blur etc.
-We propose a method which removes reflections, shadows and specularity from natural scene text images and 
+We propose a method which removes reflections, shadows and specularity from natural scene text images and
 binarize the text from a single image.
-Binarization method is one of the important pre-processing steps in document image analysis system. 
+Binarization method is one of the important pre-processing steps in document image analysis system.
 It directly affects the performance of the subsequent step which is text recognition.
-Binarization of text can be defined as classifying individual pixels as foreground (text) or background. 
+Binarization of text can be defined as classifying individual pixels as foreground (text) or background.
 
 There are many algorithms that aim at extracting foreground text from background in images but thresholding remains one of
-the oldest form that is used in many image processing applications. Many sophisticated approaches often have thresholding as a pre-processing step. 
+the oldest form that is used in many image processing applications. Many sophisticated approaches often have thresholding as a pre-processing step.
 It is often used to segment images consisting of bright objects against dark backgrounds or vice versa \cite{A1,A3,A4}.
 It typically works well for images where the foreground and background are clearly defined.
-For color thresholding images, most algorithms convert the 
-RGB image into grayscale but here we will make use of the RGB channels as three different sources/components. 
+For color thresholding images, most algorithms convert the
+RGB image into grayscale but here we will make use of the RGB channels as three different sources/components.
 
 Traditional thresholding based binarization can be grouped into two categories: the one which uses global
-threshold for the given images like Otsu \cite{A2}, Kittler {\em et al}. 
+threshold for the given images like Otsu \cite{A2}, Kittler {\em et al}.
 \cite{A5} and the one with local thresholds like Sauvola \cite{A6},
 Niblack \cite{A9}. In global thresholding methods \cite{A2,A7}, global thresholds are
 used for all pixels in image. These methods are fast and robust as
 they use a single threshold based on the global histogram of the gray-value pixels of the image.
 But they are not suitable for complex
-and degraded scene images. 
-Also selecting the right threshold for the whole image is usually a challenge 
+and degraded scene images.
+Also selecting the right threshold for the whole image is usually a challenge
 because it is difficult for the thresholding
 algorithm to differentiate foreground text from complex background.
 
 On the other hand, local or adaptive binarization \cite{A8} methods changes the threshold over the image according to local region properties.
 Adaptive thresholding addresses variations in local intensities throughout the image.
-In these methods, a per-pixel threshold is computed based on a local window around each pixel. 
-Thus, different threshold values are used for different parts of the image. 
+In these methods, a per-pixel threshold is computed based on a local window around each pixel.
+Thus, different threshold values are used for different parts of the image.
 These methods are proposed to overcome global binarization drawbacks but they can be sensitive
 to image artifacts found in natural scene text images like shadows, specularities and reflections.
-On the other hand, we propose a method that removes shadows, specularity and reflections and thus produces a clean 
+On the other hand, we propose a method that removes shadows, specularity and reflections and thus produces a clean
 binary images even for the images with complex background.
 \begin{figure*}[t]
 \centering
@@ -260,7 +353,7 @@ binary images even for the images with complex background.
 \label{fig:ICAmodel}
 \end{figure*}
 \subsection{Problem}
-The primary issue related to segmenting text from scene images is the presence of complex/textured background. 
+The primary issue related to segmenting text from scene images is the presence of complex/textured background.
 Some of the challenges are described below:
 \begin{itemize}
 \item \textbf{Noise:} Sensor noise in hand held camera devices is usually high.
@@ -273,57 +366,36 @@ Camera not equipped with auto-focus also blurs the image.
 \item \textbf{Low contrast:} It is difficult
 to extract text when there is not much color difference between the foreground text and the background.
  \item \textbf{Lighting:}
-Images containing uneven lighting, reflections, shadowing, highlights make colors of the text vary drastically and thus 
+Images containing uneven lighting, reflections, shadowing, highlights make colors of the text vary drastically and thus
 decreases analysis performance.
-Both the physical environment and uneven response/artificial lighting from the camera devices are responsible for 
+Both the physical environment and uneven response/artificial lighting from the camera devices are responsible for
 complexing the task of text extraction.
 \end{itemize}
-Some of the challenges that we encounter while segmenting natural scene text are shown in 
+Some of the challenges that we encounter while segmenting natural scene text are shown in
 Fig \ref{fig:textchallenge}.
 
 \subsection{Approach}
 We apply an Independent Component Analysis (ICA) model on natural scene images.
-It is one of the most important methods of blind source separation and has received  
+It is one of the most important methods of blind source separation and has received
 attention in the field of signal processing, pattern recognition, data compression and image analyzing.
-Using ICA,  we can extract the source signals from the 
+Using ICA,  we can extract the source signals from the
 observations based on the stochastic property of the input signals/images
-even without any information of the original source signals.  
-ICA method obtains features that present the data through a set of 
-components that are statistically independent and characterizes the data 
-in a natural way. 
+even without any information of the original source signals.
+ICA method obtains features that present the data through a set of
+components that are statistically independent and characterizes the data
+in a natural way.
 ICA based decomposition enables us to separate text from complex backgrounds containing, reflections,
 shadows and specularities. Fig \ref{fig:ICAmodel} shows the basic ICA model applied on images.
 For binarization, we apply a global thresholding method on the independent components of the image
-and that with maximum textual properties is used for extracting the foreground text. Binarization results show 
-significant improvement in the extraction of text over other reported methods. 
+and that with maximum textual properties is used for extracting the foreground text. Binarization results show
+significant improvement in the extraction of text over other reported methods.
 
 \section{Outline}
-In this chapter, we briefly analyzed textures and text in scene images. 
-The rest of this thesis is organized as follows: 
+In this chapter, we briefly analyzed textures and text in scene images.
+The rest of this thesis is organized as follows:
 We will survey techniques related to texture mapping and scene text understanding in Chapter 2. In Chapter 3
 component based texture modeling will be discussed where we will show how each component is
 modeled differently to achieve photorealism.
-In Chapter 4, we will discuss component based text segmentation from natural scene images. Finally we 
+In Chapter 4, we will discuss component based text segmentation from natural scene images. Finally we
 conclude the thesis summarizing our main contributions and discuss future work in Chapter 5.
 
-
-%This thesis is organized in four main parts. In the first part in Chapter-1, we give a brief introduction
-%on biometrics and fingerprints. We talk about various biometric traits such as face, iris, hand geometry
-%etc and see why fingerprints are the most popular and widely used in biometric authentication systems
-%around the world. Then, we have a look at the structure of a fingerprint at a global level and at a
-%local level. We look at the functioning of a fingerprint recognition system in verification mode and in
-%identification mode. Readers who are familiar with biometrics and functioning of fingerprint recognition
-%systems can skip this chapter and move on to the second part. In the second part in Chapter-2, we discuss
-%about the problem of matching two fingerprints. We talk about matching using global features such as
-%core points, ridge structure etc and see how matching at a local level using minutiae-based features
-%leads to a better accuracy. We do an exhaustive survey on minutiae-based local fingerprint matching
-%techniques. Most of these techniques build local minutiae structures from invariant distances and angles
-%in the neighborhood of each minutia. We have a look at existing local structures and their weaknesses
-%and lay motivation for a new local minutia structure. Then in the third part in Chapter-3, we look at the
-%problem of fingerprint identification over a large database. We propose a new minutiae structure called
-%an Arrangement Vector that describes the geometric arrangement of neighboring minutiae points around
-%a central minutia. We propose a hash-based novel indexing mechanism using arrangement vectors and
-%show its effectiveness. In the last part of thesis (Chapter-4), we extend the Arrangement vector into a
-%fixed length binary representation for a fingerprint and tackle the problem of fingerprint matching. We
-%finish this thesis in Chapter-5 by summarizing our main contributions and the directions in which we
-%can extend our work.

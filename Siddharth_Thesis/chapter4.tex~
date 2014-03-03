@@ -581,7 +581,7 @@ We show both qualitative and quantitative results of the proposed method.
 %\includegraphics[height=.5in,width=1in]{results/res_2/7/nib.eps}
 %}
 %\includegraphics[height=.55in,width=1.3in]{results/res_2/7/graph.eps}
-\includegraphics[height=.7in,width=1.8in]{results/res_2/7/res.eps}
+\includegraphics[height=.6in,width=1.8in]{results/res_2/7/res.eps}
 }
 %\\
 %\label{fig:subfig11}
@@ -598,7 +598,7 @@ We show both qualitative and quantitative results of the proposed method.
 %\includegraphics[height=.4in,width=1in]{results/res_2/8/nib.eps}
 %}
 %\includegraphics[height=.7in,width=1.8in]{results/res_2/8/graph.eps}
-\includegraphics[height=.7in,width=1.8in]{results/res_2/8/res.eps}
+\includegraphics[height=.6in,width=1.8in]{results/res_2/8/res.eps}
 }
 %\\
 %\label{fig:subfig11}
@@ -693,8 +693,8 @@ Text extracted}
 \includegraphics[height=.6in,width=1.7in]{results/res_6/2.eps}
 }
 \subfigure[]{
-\includegraphics[height=.6in,width=1.7in]{results/res_6/3.eps}
-\includegraphics[height=.6in,width=1.7in]{results/res_6/4.eps}
+\includegraphics[height=.6in,width=1.7in]{results/res_6/5.eps}
+\includegraphics[height=.6in,width=1.7in]{results/res_6/8.eps}
 \label{fig:subfig11}
 }
 \caption

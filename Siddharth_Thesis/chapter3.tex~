@@ -32,34 +32,34 @@ and translucency (E) \cite{chap3-1}
 \begin{figure*}[t]
 \centering
 \subfigure[Scene Image]{
-\includegraphics[scale=.26]{images/r1.eps}
+\includegraphics[height=1.2in,width=1.9in]{images/r1.eps}
 \label{fig:subfig1}
 }
 \subfigure[Direct Component]{
-\includegraphics[scale=.26]{images/r2.eps}
+\includegraphics[height=1in,width=1.9in]{images/r2.eps}
 \label{fig:subfig2}
 }
 \subfigure[Global Component]{
-\includegraphics[scale=.26]{images/r3.eps}
+\includegraphics[height=1in,width=1.9in]{images/r7.eps}
 \label{fig:subfig3}
 }
 \subfigure[Scene Image]{
-\includegraphics[scale=.23]{images/r4.eps}
+\includegraphics[height=1.1in,width=1.9in]{images/r4.eps}
 \label{fig:subfig1}
 }
 \subfigure[Direct Component]{
-\includegraphics[scale=.23]{images/r5.eps}
+\includegraphics[height=1in,width=1.9in]{images/r5.eps}
 \label{fig:subfig2}
 }
 \subfigure[Global Component]{
-\includegraphics[scale=.23]{images/r6.eps}
+\includegraphics[height=1in,width=1.9in]{images/r6.eps}
 \label{fig:subfig3} }
 \caption{Direct and global components of a scene \cite{chap3-1}} 
 \label{fig:direct}
 \end{figure*}
 \begin{figure*}[t]
 \centering
-\subfigure[$l_u=.61$,$l_v=.35$]{
+\subfigure{
 \includegraphics[height=3.3in,width=5.7in]{sep_images/sep1.eps}
 \label{fig:subfig1}
 }
@@ -806,7 +806,7 @@ In this chapter, we introduced a framework where separation of images
 into {\em direct} and {\em global} components helps us in better modeling of 3D textures.
 We improved upon the Polynomial Texture Maps (PTMs) which
 tend to smoothen the changes in appearance.
-First, we captured multiple images of a static object with a static camera under varying
+First, we captured multiple images of a static scene with a static camera under varying
 lighting conditions.
 The scene is illuminated using a high frequency checkerboard pattern using the projector. 
 We showed that the direct and global components of the image
